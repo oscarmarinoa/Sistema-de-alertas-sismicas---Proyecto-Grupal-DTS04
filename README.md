@@ -1,10 +1,6 @@
 # Sistema-de-alertas-sísmicas---
-##Proyecto-Grupal-DTS04
-
-## Tareas Semanales
-[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/1)
-
-###Integrantes: 
+## Proyecto-Grupal-DTS04
+### Integrantes: 
 * Federico Goyechea https://github.com/Workitaws
 * Oscar Mariño https://github.com/oscarmarinoa
 * Lala Weber https://github.com/LalaYupii
@@ -83,16 +79,11 @@ https://earthquake.usgs.gov/data/comcat/catalog/us/
 http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
 
 
-# Semana 1:
+## **Planificación, seguimiento de actividades y tareas de cada integrante:**
+### Tareas Sprint 01:
+[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/1)
+### Tareas Sprint 02:
+[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/2)
+### Tareas Sprint 03:
+[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/3)
 
-* Oscar: Busqueda de información relacionada con sismos en paises latinoamericános, presentación de sismos y establecimiento de repositorio comunal.
-Puedes ver este commit?
-* Lala (después lo cambio XD): Busqueda de información relacionada con sismos en Japón. Acá hago mi segundo cambio.
-* Gise: Conectar a postgres y docker
-
-
-# Tareas.
-
-[objetivos semanales y tareas integrantes](https://www.google.com/search?client=opera&q=proyecto&sourceid=opera&ie=UTF-8&oe=UTF-8)
-
-Prueba de slack
