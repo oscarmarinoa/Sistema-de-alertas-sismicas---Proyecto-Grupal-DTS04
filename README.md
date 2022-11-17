@@ -1,4 +1,13 @@
-# Sistema-de-alertas-sísmicas---Proyecto-Grupal-DTS04
+# Sistema-de-alertas-sísmicas---
+##Proyecto-Grupal-DTS04
+###Integrantes: 
+* Federico Goyechea https://github.com/Workitaws
+* Oscar Mariño https://github.com/oscarmarinoa
+* Lala Weber https://github.com/LalaYupii
+* Gisela Sánchez https://github.com/sgisela945
+
+
+![Intro](https://user-images.githubusercontent.com/104787036/202545063-d46a6706-e880-448d-a1be-906b4e7c3996.jpg)
 Projecto grupal
 
 ## **Contexto**
