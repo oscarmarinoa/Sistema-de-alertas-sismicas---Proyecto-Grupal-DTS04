@@ -1,6 +1,9 @@
 # Sistema-de-alertas-sísmicas---
 ##Proyecto-Grupal-DTS04
 
+## Tareas Semanales
+[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/1)
+
 ###Integrantes: 
 * Federico Goyechea https://github.com/Workitaws
 * Oscar Mariño https://github.com/oscarmarinoa
