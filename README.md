@@ -69,14 +69,24 @@ Fuentes de datos obligatorias:
 Nota: El producto final debe tener en su etapa de *extraccion* los datos en formato JSON o GeoJSON. Formatos de texto como CSV podrian usarse en los pasos intermedios para hacer sus test respectivos de ser necesario, pero no seran admitidos en la entrega final.
 
 ## USGS 
-### Diccionario:
+#### Diccionario:
 https://earthquake.usgs.gov/data/comcat/index.php#tsunami
-### Documentación de API:
+#### Documentación de API:
 https://earthquake.usgs.gov/fdsnws/event/1/
-### Rango de fechas/formatos disponibles por catálogo
+#### Rango de fechas/formatos disponibles por catálogo
 https://earthquake.usgs.gov/data/comcat/catalog/us/
-### FDSN	Web	Service	Specifications
+#### FDSN	Web	Service	Specifications
 http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
+
+##JAPON
+#### Fuente:
+https://www.jma.go.jp/jma/index.html
+#### Place APIS:
+https://www.p2pquake.net/
+#### Documentación de API JSON:
+https://www.p2pquake.net/json_api_v2/
+#### Ejemplo de archivo JSON:
+![Ejemplo JSON](https://user-images.githubusercontent.com/104787036/203128755-af6ed777-dfcd-4df5-bc67-ba593bfa9443.JPG)
 
 
 ## **Planificación, seguimiento de actividades y tareas de cada integrante:**
