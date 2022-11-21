@@ -8,7 +8,7 @@
 
 
 ![Intro](https://user-images.githubusercontent.com/104787036/202545063-d46a6706-e880-448d-a1be-906b4e7c3996.jpg)
-Projecto grupal
+
 
 ## **Contexto**
 
@@ -78,7 +78,7 @@ https://earthquake.usgs.gov/data/comcat/catalog/us/
 #### FDSN	Web	Service	Specifications
 http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
 
-##JAPON
+## JAPON
 #### Fuente:
 https://www.jma.go.jp/jma/index.html
 #### Place APIS:
