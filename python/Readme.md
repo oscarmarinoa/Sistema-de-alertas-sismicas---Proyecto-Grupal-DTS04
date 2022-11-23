@@ -1,6 +1,5 @@
 ## Repositorios:
 * scripts_datasets.ipynb : Contiene el código necesario para obtener los datos de las diferentes fuentes de información, la creación de una base de datos local en Porstgres y la ingesta de la misma.
-* pasar la información desde la api https://earthquake.usgs.gov/ a postgres
 
 # Fuentes de información:
 ## USGS 
