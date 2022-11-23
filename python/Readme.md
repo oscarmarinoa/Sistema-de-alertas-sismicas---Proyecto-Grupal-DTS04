@@ -1,16 +1,14 @@
 ## Repositorios:
-* API-USA.ipynb : Tiene el código necesario para pasar la información desde la api https://earthquake.usgs.gov/ a postgres
+* scripts_datasets.ipynb : Contiene el código necesario para obtener los datos de las diferentes fuentes de información, la creación de una base de datos local en Porstgres y la ingesta de la misma.
+* pasar la información desde la api https://earthquake.usgs.gov/ a postgres
 
 # Fuentes de información:
 ## USGS 
-#### Diccionario:
-https://earthquake.usgs.gov/data/comcat/index.php#tsunami
-#### Documentación de API:
-https://earthquake.usgs.gov/fdsnws/event/1/
-#### Rango de fechas/formatos disponibles por catálogo
-https://earthquake.usgs.gov/data/comcat/catalog/us/
-#### FDSN	Web	Service	Specifications
-http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf
+Corresponde con el Servicio Geológico de Estados Unidos. Se utilizé esta API para recolectar información relacionada con eventos sísmicos y de tsunamis para los paises de interes.
+* [Documentación API USGS](https://earthquake.usgs.gov/fdsnws/event/1/)
+* [Diccionario API USGS](https://earthquake.usgs.gov/data/comcat/index.php#tsunami)
+* [Rango de fechas/formatos disponibles por catálogo](https://earthquake.usgs.gov/data/comcat/catalog/us/)
+* [FDSN	Web	Service	Specifications](http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf)
 
 ## JAPON
 #### Fuente:
