@@ -4,7 +4,7 @@
 
 # Fuentes de información:
 ## USGS 
-Corresponde con el Servicio Geológico de Estados Unidos. Se utilizé esta API para recolectar información relacionada con eventos sísmicos y de tsunamis para los paises de interes.
+Corresponde con el Servicio Geológico de Estados Unidos. Se utilizé esta API para recolectar información relacionada con eventos sísmicos y de tsunamis para los paises de interés.
 * [Documentación API USGS](https://earthquake.usgs.gov/fdsnws/event/1/)
 * [Diccionario API USGS](https://earthquake.usgs.gov/data/comcat/index.php#tsunami)
 * [Rango de fechas/formatos disponibles por catálogo](https://earthquake.usgs.gov/data/comcat/catalog/us/)
