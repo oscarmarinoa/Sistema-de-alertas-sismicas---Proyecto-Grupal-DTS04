@@ -25,3 +25,4 @@ https://www.p2pquake.net/json_api_v2/
 ## NOAA
 Como fuente de información adicional se utilizaron los datos obtenidos de la API de la Oficina Nacional de Administración Oceánica y Atmosférica (NOAA). De esta se extraen datos referentes a sismos de los 3 paises, tsunamis y localización de volcanes.
 * [Documentación API NOAA](https://www.ngdc.noaa.gov/hazel/view/swagger#/)
+* [Diccionario API NOAA](https://www.ngdc.noaa.gov/hazel/view/about)
