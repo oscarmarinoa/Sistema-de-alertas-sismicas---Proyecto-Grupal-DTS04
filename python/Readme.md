@@ -28,7 +28,7 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
 Explicación detallada del contenido de los datos y su formato.
  
   | **Característica** | **Descripción** | **Medida** | **Formato** |
-  | --- | --- | --- |
+  | --- | --- | --- | --- |
   | idpais | Código único que identifica el país en el cual se originó el sismo. | N/A | int |
   | mag | Magnitud del sismo sucedido. | Medida en escala de magnitud de Richter* | float |
   | time | Fecha del evento sísmico. <sub>Incluye horas, minutos y segundos.</sub> | N/A | datetime |
