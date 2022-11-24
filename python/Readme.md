@@ -27,16 +27,17 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
 # Diccionario de datos:
 Explicación detallada del contenido de los datos y su formato.
  
-  | **Característica** | **Descripción** | **Formato** |
+  | **Característica** | **Descripción** | **Medida** | **Formato** |
   | --- | --- | --- |
-  | idpais | Código único que identifica el país en el cual se originó el sismo. | int |
-  | mag | Magnitud del sismo sucedido. | float |
-  | time | Fecha del evento sísmico. <sub>Incluye horas, minutos y segundos.</sub> | datetime |
-  | url | Url del sitio web donde se encuentra información detallada del sismo. | str |
-  | tsunami | Booleano que indica si ocurrió o no un tsunami asociado al sismo: <sub>1 = Si, 0 = No.</sub> | int |
-  | title | Descripción detallada del evento sísmico. | str |
-  | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | float |
-  | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | float |
-  | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | int |
-  | riesgo | Booleano que indica el nivel de riesgo asociado al sismo: <sub>1 =Riesgoso, 0 = No Riesgoso.</sub> | int |
-
+  | idpais | Código único que identifica el país en el cual se originó el sismo. | N/A | int |
+  | mag | Magnitud del sismo sucedido. | Medida en escala de magnitud de Richter* | float |
+  | time | Fecha del evento sísmico. <sub>Incluye horas, minutos y segundos.</sub> | N/A | datetime |
+  | url | Url del sitio web donde se encuentra información detallada del sismo. | N/A | str |
+  | tsunami | Booleano que indica si ocurrió o no un tsunami asociado al sismo: <sub>1 = Si, 0 = No.</sub> | N/A | int |
+  | title | Descripción detallada del evento sísmico. | N/A | str |
+  | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | Grados decimales | float |
+  | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | Grados decimales | float |
+  | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | Kilómetros | int |
+  <sub>[Escala de Richter USGS](https://www.usgs.gov/faqs/moment-magnitude-richter-scale-what-are-different-magnitude-scales-and-why-are-there-so-many)
+  <sub>N/A: No aplica</sub>
+ 
