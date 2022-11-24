@@ -23,3 +23,19 @@ https://www.p2pquake.net/json_api_v2/
 Como fuente de información adicional se utilizaron los datos obtenidos de la API de la Oficina Nacional de Administración Oceánica y Atmosférica (NOAA). De esta se extraen datos referentes a sismos de los 3 paises, tsunamis y localización de volcanes.
 * [Documentación API NOAA](https://www.ngdc.noaa.gov/hazel/view/swagger#/)
 * [Diccionario API NOAA](https://www.ngdc.noaa.gov/hazel/view/about)
+
+# Diccionario de datos:
+Explicación detallada del contenido de los datos y su formato.
+ 
+  | **Característica** | **Descripción** | **Formato** |
+  | --- | --- | --- |
+  | idpais | Código único que identifica el país en el cual se originó el sismo. | int |
+  | mag | Magnitud del sismo sucedido. | float |
+  | time | Fecha del evento sísmico. <sub>Incluye horas, minutos y segundos.</sub> | datetime |
+  | url | Url del sitio web donde se encuentra información detallada del sismo. | str |
+  | tsunami | Booleano que indica si ocurrió o no un tsunami asociado al sismo: <sub>1 = Si, 0 = No.</sub> | int |
+  | title | Descripción detallada del evento sísmico. | str |
+  | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | float |
+  | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | float |
+  | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | int |
+
