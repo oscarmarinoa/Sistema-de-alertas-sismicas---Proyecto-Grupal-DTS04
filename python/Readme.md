@@ -39,6 +39,7 @@ Explicación detallada del contenido de los datos y su formato.
   | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | Grados decimales | float |
   | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | Kilómetros | int |
  
- <sub>[Escala de Richter USGS](https://www.usgs.gov/faqs/moment-magnitude-richter-scale-what-are-different-magnitude-scales-and-why-are-there-so-many)
- <sub>N/A: No aplica</sub>
+ * <sub>N/A: No aplica</sub>
+ * <sub>[Escala de Richter USGS](https://www.usgs.gov/faqs/moment-magnitude-richter-scale-what-are-different-magnitude-scales-and-why-are-there-so-many)
+ 
  
