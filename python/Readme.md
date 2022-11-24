@@ -38,4 +38,5 @@ Explicación detallada del contenido de los datos y su formato.
   | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | float |
   | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | float |
   | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | int |
+  | riesgo | Booleano que indica el nivel de riesgo asociado al sismo: <sub>1 =Riesgoso, 0 = No Riesgoso.</sub> | int |
 
