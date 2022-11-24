@@ -58,6 +58,7 @@ Explicación detallada del contenido de los datos y su formato.
   | deepth | Profundidad a la cual se originó el sismo que ocasionó el tsunami <sub>(Hipocentro).</sub> | Kilómetros | int |
   
     * <sub>m.s.n.m: Metros sobre el nivel del mar</sub>
+    ** <sub>Metros sobre el nivel del mar</sub>
  
  #### Tabla Volcanes:
   | **Característica** | **Descripción** | **Medida** | **Formato** |
