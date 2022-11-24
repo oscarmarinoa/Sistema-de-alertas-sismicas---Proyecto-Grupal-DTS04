@@ -25,7 +25,6 @@ Explicación detallada del contenido de los datos y su formato.
   | place | Descripción detallada del volcán. | N/A | str |
   | time | Fecha del fenomeno natural. <sub>Incluye horas, minutos y segundos.</sub> | N/A | datetime |
   | url | Url del sitio web donde se encuentra información detallada del sismo. | N/A | str |
-  | tsunami | Booleano que indica si ocurrió o no un tsunami asociado al sismo: <sub>1 = Si, 0 = No.</sub> | N/A | int |
   | mag | Magnitud del evento sísmico que ocasiono el tsunami. | Medida en escala de magnitud de Richter | float |
   | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | Grados decimales | float |
   | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | Grados decimales | float |
