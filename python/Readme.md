@@ -47,14 +47,17 @@ Explicación detallada del contenido de los datos y su formato.
   | **Característica** | **Descripción** | **Medida** | **Formato** |
   | --- | --- | --- | --- |
   | idpais | Código único que identifica el país en el cual se localiza el volcán. | N/A | int |
-  | nombre | Magnitud del sismo sucedido. | Medida en escala de magnitud de Richter* | float |
-  | time | Fecha del evento sísmico. <sub>Incluye horas, minutos y segundos.</sub> | N/A | datetime |
+  | altura_oleaje | Altura de las olas producidas por el evento natural. | m.s.n.m | float |
+  | place | Descripción detallada del volcán. | N/A | str |
+  | time | Fecha del fenomeno natural. <sub>Incluye horas, minutos y segundos.</sub> | N/A | datetime |
   | url | Url del sitio web donde se encuentra información detallada del sismo. | N/A | str |
   | tsunami | Booleano que indica si ocurrió o no un tsunami asociado al sismo: <sub>1 = Si, 0 = No.</sub> | N/A | int |
-  | title | Descripción detallada del evento sísmico. | N/A | str |
+  | mag | Magnitud del evento sísmico que ocasiono el tsunami. | Medida en escala de magnitud de Richter | float |
   | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | Grados decimales | float |
   | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | Grados decimales | float |
-  | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | Kilómetros | int |
+  | deepth | Profundidad a la cual se originó el sismo que ocasionó el tsunami <sub>(Hipocentro).</sub> | Kilómetros | int |
+  
+    * <sub>m.s.n.m: Metros sobre el nivel del mar</sub>
  
  #### Tabla Volcanes:
   | **Característica** | **Descripción** | **Medida** | **Formato** |
@@ -67,3 +70,4 @@ Explicación detallada del contenido de los datos y su formato.
   | lat | Coordenada geográfica Norte del volcán. <sub>(Latitud)</sub> | Grados decimales | float |
   | lng | Coordenada geográfica Este del volcán. <sub>(Longitud)</sub> | Grados decimales | float |
   | url | Url del sitio web donde se encuentra información detallada del volcán. | N/A | str |
+  
