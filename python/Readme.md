@@ -1,9 +1,9 @@
 ## Repositorios:
-* scripts_datasets.ipynb : Contiene el código necesario para obtener los datos de las diferentes fuentes de información, la creación de una base de datos local en Porstgres y la ingesta de la misma.
+* scripts_datasets.ipynb : Contiene el código necesario para obtener los datos de las diferentes fuentes de información, la creación de una base de datos local en Postgres y la ingesta de la misma.
 
 # Fuentes de información:
 ## USGS 
-Corresponde con el Servicio Geológico de Estados Unidos. Se utilizé esta API para recolectar información relacionada con eventos sísmicos y de tsunamis para los paises de interés.
+Corresponde con el Servicio Geológico de Estados Unidos. Se utilizó esta API para recolectar información relacionada con eventos sísmicos y de tsunamis para los paises de interés.
 * [Documentación API USGS](https://earthquake.usgs.gov/fdsnws/event/1/)
 * [Diccionario API USGS](https://earthquake.usgs.gov/data/comcat/index.php#tsunami)
 * [Rango de fechas/formatos disponibles por catálogo](https://earthquake.usgs.gov/data/comcat/catalog/us/)
