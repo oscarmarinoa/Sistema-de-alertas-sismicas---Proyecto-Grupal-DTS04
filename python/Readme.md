@@ -28,11 +28,11 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
 
 1. Sitio usado como herramienta de Web Scraping :
 
-  A. https://www.sismologia.cl -- DATOS DE CHILE.
+ 	 A. https://www.sismologia.cl -- DATOS DE CHILE.
   
-  B. https://www.hinet.bosai.go.jp -- DATOS DE JAPÓN.
+ 	 B. https://www.hinet.bosai.go.jp -- DATOS DE JAPÓN.
   
-Como Fuente Para estudio(Henry) de Proyecto Grupal (Sismo).
+	Como Fuente Para estudio(Henry) de Proyecto Grupal (Sismo).
 
 2. Sitio Web: Inspeccione de elemento, mediante opciones de navegación del mismo navegador.
 
