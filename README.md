@@ -72,6 +72,7 @@ Nota: El producto final debe tener en su etapa de *extraccion* los datos en form
 ### Tareas Sprint 01:
 [Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/1)
 ### Tareas Sprint 02:
+https://www.canva.com/design/DAFS6iNq4-A/e2zEpPwc_PynegS6OCsBQA/view?utm_content=DAFS6iNq4-A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 [Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/2)
 ### Tareas Sprint 03:
 [Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/3)
