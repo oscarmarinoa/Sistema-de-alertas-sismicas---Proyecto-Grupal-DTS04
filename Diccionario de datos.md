@@ -8,11 +8,12 @@ Explicación detallada del contenido de los datos y su formato.
   | mag | Magnitud del sismo sucedido. | Medida en escala de magnitud de Richter* | float |
   | time | Fecha del evento sísmico. <sub>Incluye horas, minutos y segundos.</sub> | N/A | datetime |
   | url | Url del sitio web donde se encuentra información detallada del sismo. | N/A | str |
-  | tsunami | Booleano que indica si ocurrió o no un tsunami asociado al sismo: <sub>1 = Si, 0 = No.</sub> | N/A | int |
+  | tsunami | Valor que indica si ocurrió un tsunami: <sub>-1 = Sin Datos 0 = No</sub> <sub>1 = Si | N/A | smallint |
   | title | Descripción detallada del evento sísmico. | N/A | str |
   | lng | Coordenada geográfica Este del evento sísmico. <sub>(Longitud)</sub> | Grados decimales | float |
   | lat | Coordenada geográfica Norte del evento sísmico. <sub>(Latitud)</sub> | Grados decimales | float |
   | deepth | Profundidad a la cual se originó el sismo <sub>(Hipocentro).</sub> | Kilómetros | int |
+  | peligro | Resultado de la preddicción del modelo |  N/A  | smallint |
  
  * <sub>N/A: No aplica</sub>
  * <sub>[Escala de Richter USGS](https://www.usgs.gov/faqs/moment-magnitude-richter-scale-what-are-different-magnitude-scales-and-why-are-there-so-many)
