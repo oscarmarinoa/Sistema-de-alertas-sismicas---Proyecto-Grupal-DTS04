@@ -26,7 +26,7 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
   
 ## Web Scraping 
 
-1. Sitio usado como herramienta de Web Scraping :
+1. Sitio Web usados junto con Web Scraping:
 
  	 A. https://www.sismologia.cl -- DATOS DE CHILE.
   
@@ -34,9 +34,9 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
   
 	Como Fuente Para estudio(Henry) de Proyecto Grupal (Sismo).
 
-2. Sitio Web: Inspeccione de elemento, mediante opciones de navegación del mismo navegador.
+2. Lo primero primero que hacemos, es inspeccionar los elementos de la página mediante las opciones de navegación del mismo navegador.
 
-3. Inspeccionar el body de la web y Buscar la etiqueta table. Si se cumple lo Siguiente. Se puede pasar al Siguiente paso.
+3. Inspeccionamos el body de la web y buscamos la etiqueta Table. Si tenemos esta etiqueta se puede pasar a los siguientes pasos.
 
 4. Para conectar se usaron 2 librerías:
 
@@ -44,12 +44,12 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
   
 	B. BeautifulSoup
 
-5. Generar la Requests del sitio web (Conexión).
+5. Generamos la Requests del sitio web (Conexión).
 
-6. Genero con BeautifulSoup(html) para poder ver lo que contiene el sitio web o de la pagina.
+6. Usamos BeautifulSoup para poder ver lo que contiene el sitio web obteniendo el html.
 
-7. Filtro la Etiqueta Tabla del la Vista Generada por BeautifulSoup.
+7. Filtramos la Etiqueta Table del la Vista Generada por BeautifulSoup.
 
-8. Genero Contenedores Para Cada columna.
+8. Generamos los Contenedores Para cada columna.
 
-9. Programar tipo de parámetro para extrae la información y albergarla según su columna .
+9. Programamos los tipos de parámetros necesarios para extraer la información y guardarla en su columna correspondiente.
