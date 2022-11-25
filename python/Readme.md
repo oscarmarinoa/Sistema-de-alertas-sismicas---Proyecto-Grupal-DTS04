@@ -24,3 +24,32 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
 * [Documentación API NOAA](https://www.ngdc.noaa.gov/hazel/view/swagger#/)
 * [Diccionario API NOAA](https://www.ngdc.noaa.gov/hazel/view/about)
   
+## Web Scraping 
+
+1. Sitio usado como herramienta de Web Scraping :
+
+  A. https://www.sismologia.cl -- DATOS DE CHILE.
+  
+  B. https://www.hinet.bosai.go.jp -- DATOS DE JAPÓN.
+  
+Como Fuente Para estudio(Henry) de Proyecto Grupal (Sismo).
+
+2. Sitio Web: Inspeccione de elemento, mediante opciones de navegación del mismo navegador.
+
+3. Inspeccionar el body de la web y Buscar la etiqueta table. Si se cumple lo Siguiente. Se puede pasar al Siguiente paso.
+
+4. Para conectar se usaron 2 librerías:
+
+ 	A. Requests
+  
+	B. BeautifulSoup
+
+5. Generar la Requests del sitio web (Conexión).
+
+6. Genero con BeautifulSoup(html) para poder ver lo que contiene el sitio web o de la pagina.
+
+7. Filtro la Etiqueta Tabla del la Vista Generada por BeautifulSoup.
+
+8. Genero Contenedores Para Cada columna.
+
+9. Programar tipo de parámetro para extrae la información y albergarla según su columna .
