@@ -1,5 +1,5 @@
 # Diccionario de datos:
-Explicación detallada del contenido de los datos y su formato.
+Explicación detallada del contenido de los datos y su formato. INtento OSCAR
 
 #### Tabla Sismos: 
   | **Característica** | **Descripción** | **Medida** | **Formato** |
