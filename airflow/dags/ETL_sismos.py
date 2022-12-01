@@ -3,42 +3,25 @@
 import requests
 #Para realizar la estructura tabular
 import pandas as pd
-#Para rellenar vacíos
-import numpy as np
-import json
 
 #ETL:
 #para normalizar strings
 from unicodedata import normalize
 #para normalizar incluyendo la ñ
 import re 
-#para obtener fechas
-import time
 #hacer los calendarios de iteración
 from dateutil.rrule import rrule, DAILY , MONTHLY
 
-#Conexión con postgresql:
-#Para crear tablas con claves primarias y foraneas
-#import psycopg2 as pypg2
 #Para append los datos a ingestar en la tabla
 #from sqlalchemy import create_engine
 
 #Web Scraping
 from bs4 import BeautifulSoup
 
-#Ver para japón: (borrar si no se usa)
-from urllib.parse import quote
-
-
-#limpiar la consola y acceder a directorios
-import os
-
 from airflow.models import DAG
 import datetime as dt
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
-from airflow.models.xcom import XCom
-from airflow.models.taskinstance import TaskInstance as ti
 
 from urllib3.exceptions import InsecureRequestWarning
 from urllib3 import disable_warnings
@@ -49,6 +32,10 @@ requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL:@SECLEVEL=1'
 #desactivamos los request
 disable_warnings(InsecureRequestWarning)
 
+
+usa = 1
+japon = 2
+chile = 3
 
 
 
@@ -182,8 +169,8 @@ def procesarDatos(url):
     df_crudo = limpieza_general_tabla(df_crudo)
 
     # Agregamos la columna idpais y peligro hardcodeada
-    df_crudo['idpais'] = 3
-    df_crudo['peligro'] = 1
+    df_crudo['idpais'] = usa
+    df_crudo['peligro'] = -1
 
     return df_crudo
 
@@ -196,12 +183,12 @@ def consultarAPIUsa():
     -> DataFrame
     '''
     # Definimos las fechas desde y hasta para la url
-    fecha_hasta = dt.datetime.today()
+    fecha_hasta = dt.datetime.today() - dt.timedelta(days=1)
     fecha_desde = fecha_hasta - dt.timedelta(days=1)
     
     # Formateamos las fechas
-    fecha_hasta = dt.datetime.strftime(fecha_hasta, '%Y-%m-%d')
     fecha_desde = dt.datetime.strftime(fecha_desde, '%Y-%m-%d')
+    fecha_hasta = dt.datetime.strftime(fecha_hasta, '%Y-%m-%d')
 
     # armamos la url
     url = f'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime={fecha_desde}&endtime={fecha_hasta}&jsonerror=true'
@@ -239,7 +226,15 @@ def extraerUsa():
     cadena = str(cadena)
     cadena = cadena[1 : -1]
 
+    if not df_.empty:
+        cadena = '''INSERT INTO usa \
+                    (idpais, mag, place, time, url, tsunami, title, lng, lat, deepth, peligro) \
+                    VALUES''' + cadena + ';'
+    else:
+        cadena = 'SELECT COUNT(*) FROM pais;'
+
     return cadena
+
 
 
 
@@ -255,8 +250,13 @@ def get_url(date):
     Entrada: Toma como ingesta la fecha en formato %YYYY%mm%dd, ej 20221102
     Salida: Devuelve la url para esa fecha y las filas de la tabla obtenida para esa fecha
     '''
+    # Agregamos "0" si el número de mes es un solo dígito
+    mes = str(date.month)
+    if len(mes) == 1:
+        mes = '0' + mes
+
     #url
-    url = f'https://www.hinet.bosai.go.jp/AQUA/aqua_catalogue.php?y={date.year}&m={date.month}&d{date.day}&LANG=en'
+    url = f'https://www.hinet.bosai.go.jp/AQUA/aqua_catalogue.php?y={date.year}&m={mes}&LANG=en'
     #hacemos la request
     page = requests.get(url)
     #leemos el html
@@ -294,6 +294,9 @@ def historicos_japon(url, rows1):
         datos['lat'].append(float(rows1[index].find_all("td")[2].get_text()[:-1]))
         datos['deepth'].append(float(rows1[index].find_all("td")[4].get_text().split('km')[0]))
 
+    for elemento in datos:
+        len(datos[elemento])
+
     df_japon = pd.DataFrame(datos)
 
     return df_japon
@@ -315,8 +318,8 @@ def carga_historica_japon():
 
     df = limpieza_general_tabla(df)
 
-    df.insert(loc = 0, column = 'idpais', value = 1)
-    df['peligro'] = 1
+    df.insert(loc = 0, column = 'idpais', value = japon)
+    df['peligro'] = -1
 
     return df
 
@@ -330,7 +333,12 @@ def extraerJapon():
     '''
     df_ = carga_historica_japon()
 
-    # Eliminar los días que no son de hoy
+    # Eliminamos los que no corresponden al día solicitado, dado que
+    # la API de Japón devuelve todo el mes aunque se especifique el día
+    hoy = dt.datetime.today() - dt.timedelta(days=2)
+    hoy = str(hoy.day)
+    df_mask = df_['time'].apply(lambda x: x[4:6] == hoy)
+    df_ = df_[df_mask]
 
 
     # Creamos las listas para armar la cadena sql
@@ -351,6 +359,14 @@ def extraerJapon():
     cadena = str(cadena)
     cadena = cadena[1 : -1]
 
+    if not df_.empty:
+        cadena = """INSERT INTO japon \
+                    (idpais, mag, place, time, url, tsunami, title, lng, lat, deepth, peligro) \
+                    VALUES \
+                    """ + cadena + ';'
+    else:
+        cadena = 'SELECT COUNT(*) FROM pais'
+
     return cadena
 
 
@@ -364,7 +380,7 @@ def extraerJapon():
 def get_url_chile(dt):
     year = dt.strftime("%Y")
     month = dt.strftime("%m")
-    day = dt.strftime('%d')
+    day = dt.strftime('%Y%m%d')
 
     url = f"https://www.sismologia.cl/sismicidad/catalogo/{year}/{month}/{day}.html"
     urlx = requests.get(url)
@@ -373,7 +389,7 @@ def get_url_chile(dt):
         rows = soup.find("table", attrs={"class":"sismologia detalle"}).find_all("tr")
         return  url, rows
     else:
-        return url, None
+        return url, rows
 
 
 
@@ -393,13 +409,17 @@ def datos_chile(url, rows):
             time = time[2 : -2]
             datos['time'].append(time)
 
+
             datos['url'].append(url)
             datos['tsunami'].append(-1)
             datos['title'].append('Sin dato')
 
-            datos['lng'].append(float(rows[index].find_all("td")[2].get_text()[:7]))
-            datos['lat'].append(float(rows[index].find_all("td")[2].get_text()[-7:]))
+            datos['lat'].append(float(rows[index].find_all("td")[2].get_text()[:7]))
+            datos['lng'].append(float(rows[index].find_all("td")[2].get_text()[-7:]))
             datos['deepth'].append(float(rows[index].find_all("td")[3].get_text().split()[0]))
+
+    for elemento in datos:
+        len(datos[elemento])
 
     df_chile = pd.DataFrame(datos)
 
@@ -414,18 +434,16 @@ def carga_historica_chile():
     Entrada: Fecha de ingreso en formato date, fecha de fin de la carga en formato date
     Salida: Notificación de finalizada la carga
     '''
-    fecha = dt.datetime.today()
+    fecha = dt.datetime.today() - dt.timedelta(days=2)
 
     url, rows = get_url_chile(fecha)    
 
-    if rows is not None:
-        df = datos_chile(url, rows)
-        df = limpieza_general_tabla(df)
-        df.insert(loc = 0, column = 'idpais', value = 2)
-        df['peligro'] = 1
-        return df
-    else:
-        return None
+    df = datos_chile(url, rows)
+    df = limpieza_general_tabla(df)
+    df.insert(loc = 0, column = 'idpais', value = chile)
+    df['peligro'] = -1
+
+    return df
 
 
 
@@ -437,27 +455,39 @@ def extraerChile():
     '''
     df_ = carga_historica_chile()
 
-    if df_ is not None:
-        # Creamos las listas para armar la cadena sql
-        idpais = list(df_['idpais'])
-        mag = list(df_['mag'])
-        place = list(df_['place'])
-        time = list(df_['time'])
-        url = list(df_['url'])
-        tsunami = list(df_['tsunami'])
-        title = list(df_['title'])
-        lng = list(df_['lng'])
-        lat = list(df_['lat'])
-        deepth = list(df_['deepth'])
-        peligro = list(df_['peligro'])
+    '''Rango de latitud y longitud de Chile utilizados para eliminar puntos erroneos'''
+    df_ = df_[(df_['lat'] > -50.0) & (df_['lat'] < -18.0) & (df_['lng'] > -75.0) & (df_['lng'] < -60.0)]
 
-        # Armamos la cadena
-        cadena = list(zip(idpais, mag, place, time, url, tsunami, title, lng, lat, deepth,peligro))
-        cadena = str(cadena)
-        cadena = cadena[1 : -1]
-        return cadena
+
+    # Creamos las listas para armar la cadena sql
+    idpais = list(df_['idpais'])
+    mag = list(df_['mag'])
+    place = list(df_['place'])
+    time = list(df_['time'])
+    url = list(df_['url'])
+    tsunami = list(df_['tsunami'])
+    title = list(df_['title'])
+    lng = list(df_['lng'])
+    lat = list(df_['lat'])
+    deepth = list(df_['deepth'])
+    peligro = list(df_['peligro'])
+
+    # Armamos la cadena
+    cadena = list(zip(idpais, mag, place, time, url, tsunami, title, lng, lat, deepth,peligro))
+    cadena = str(cadena)
+    cadena = cadena[1 : -1]
+
+    if not df_.empty:
+        cadena = """INSERT INTO chile \
+                    (idpais, mag, place, time, url, tsunami, title, lng, lat, deepth, peligro) \
+                    VALUES \
+                    """ + cadena + ';'
     else:
-        return ''
+        cadena = 'SELECT COUNT(*) FROM pais'
+
+
+
+    return cadena
 
 
 
@@ -467,12 +497,12 @@ def extraerChile():
 
 
 '''================================ DAGs ==========================='''
-
-with DAG(dag_id='ETL_sismos',
+#Creamos el DAG y vamos relacionando las tareas con las funciones correspondientes
+with DAG(dag_id='ETL_Sismos',
          start_date = dt.datetime(2022, 11, 1),
-         schedule_interval = '*/1 * * * *',
+         schedule_interval = '@daily',
          default_args = {'retries': 2,
-                         'owner': 'Lala'},
+                         'owner': 'Earth Data'},
          catchup = False
 ) as dag:
 
@@ -488,23 +518,34 @@ with DAG(dag_id='ETL_sismos',
         provide_context=True
     )
 
+    task_extraer_chile = PythonOperator(
+        task_id='extraer_chile',
+        python_callable=extraerChile,
+        #Provide_context habilita que se pase la información obtenida de esta tarea a la siguiente
+        provide_context=True
+    )
+
     task_guardar_usa = PostgresOperator(
         task_id='guardar_usa',
+        #Nombre que le pusimos a la conexión de airflow con docker o gcp
         postgres_conn_id='sismosdb_id',
-        sql = '''INSERT INTO usa \
-                 (idpais, mag, place, time, url, tsunami, title, lng, lat, deepth, peligro) \
-                 VALUES \
-                 {{ti.xcom_pull(task_ids='extraer_usa')}};'''
+        #ti.xcom_pull nos permite pasar contenido entre las tareas
+        sql = "{{ti.xcom_pull(task_ids='extraer_usa')}}"
     )
 
     task_guardar_japon = PostgresOperator(
         task_id='guardar_japon',
         postgres_conn_id='sismosdb_id',
-        sql = '''INSERT INTO japon \
-                 (idpais, mag, place, time, url, tsunami, title, lng, lat, deepth, peligro) \
-                 VALUES \
-                 {{ti.xcom_pull(task_ids='extraer_japon')}};'''
+        sql = "{{ti.xcom_pull(task_ids='extraer_japon')}}"
     )
 
+    task_guardar_chile = PostgresOperator(
+        task_id='guardar_chile',
+        postgres_conn_id='sismosdb_id',
+        sql = "{{ti.xcom_pull(task_ids='extraer_chile')}}"
+    )
 
-task_extraer_usa >> task_guardar_usa >> task_extraer_japon >> task_guardar_japon 
+#Ejecutamos las tareas de manera secuencial
+task_extraer_usa >> task_guardar_usa >> \
+task_extraer_japon >> task_guardar_japon >> \
+task_extraer_chile >> task_guardar_chile
