@@ -78,4 +78,4 @@ https://www.canva.com/design/DAFS6iNq4-A/e2zEpPwc_PynegS6OCsBQA/view?utm_content
 ### Tareas Sprint 03:
 [Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/3)
 
-[! Henry DTS-04](https://github.com/oscarmarinoa/Sistema-de-alertas-sismicas---Proyecto-Grupal-DTS04/blob/main/Henry%20Logo.png)
+![Henry DTS-04](https://github.com/oscarmarinoa/Sistema-de-alertas-sismicas---Proyecto-Grupal-DTS04/blob/main/Henry%20Logo.png)
