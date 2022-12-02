@@ -6,3 +6,9 @@ En esta carpeta encontraras los archivos necesarios para correr una API mediante
 * database.py : Configuración de la conexión a la base de datos y creación de sesión de trabajo.
 * main.py: Estructura de la api.
 * models.py: Modelos de la base de datos para ser leidos por FASTAPI.
+
+### Documentación:
+* [Documentación FASTAPI](https://fastapi.tiangolo.com)
+* [Documentación SQLAlchemy](https://www.sqlalchemy.org)
+* [Tutorial Framework FATAPI](https://www.youtube.com/watch?v=7t2alSnE2-I)
+* [Documentación Modelos SQL a traves de Pydantic y SQLAlchemy](https://sqlmodel.tiangolo.com)
