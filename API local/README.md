@@ -12,3 +12,5 @@ En esta carpeta encontraras los archivos necesarios para correr una API mediante
 * [Documentación SQLAlchemy](https://www.sqlalchemy.org)
 * [Tutorial Framework FATAPI](https://www.youtube.com/watch?v=7t2alSnE2-I)
 * [Documentación Modelos SQL a traves de Pydantic y SQLAlchemy](https://sqlmodel.tiangolo.com)
+
+https://github.com/oscarmarinoa/Sistema-de-alertas-sismicas---Proyecto-Grupal-DTS04/blob/main/API%20local/API.png
