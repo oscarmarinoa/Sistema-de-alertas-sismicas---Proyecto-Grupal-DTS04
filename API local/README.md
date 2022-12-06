@@ -11,7 +11,7 @@ En esta carpeta encontraras los archivos necesarios para correr una API mediante
 * [Documentación FASTAPI](https://fastapi.tiangolo.com)
 * [Repositorio FASTAPI Github](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker)
 * [Documentación SQLAlchemy](https://www.sqlalchemy.org)
-* [Tutorial Framework FATAPI](https://www.youtube.com/watch?v=7t2alSnE2-I)
+* [Tutorial Framework FASTAPI](https://www.youtube.com/watch?v=7t2alSnE2-I)
 * [Documentación Modelos SQL a traves de Pydantic y SQLAlchemy](https://sqlmodel.tiangolo.com)
 
 ## API
