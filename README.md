@@ -1,7 +1,7 @@
-# Sistema-de-alertas-sísmicas
+# Sistema de alertas sísmicas
 ## Proyecto-Grupal-DTS04
 ### Integrantes: 
-* Federico Goyechea https://github.com/Workitaws
+* Federico Goyechea [github](https://github.com/Workitaws)
 * Oscar Mariño https://github.com/oscarmarinoa
 * Lala Weber https://github.com/LalaYupii
 * Gisela Sánchez https://github.com/sgisela945
