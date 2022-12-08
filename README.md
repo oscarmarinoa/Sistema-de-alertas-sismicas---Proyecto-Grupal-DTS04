@@ -1,4 +1,4 @@
-# Sistema de alertas sísmicas
+# Working towards global standardization of seismological networks and effective communication to the civilian community
 ## Proyecto-Grupal-DTS04
 ### Integrantes: 
 * Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
@@ -15,7 +15,7 @@
 
 Los desastres naturales pueden resultar en un gran número de muertes, pérdida de propiedades, y daños irreparables. Es por esto que la predicción temprana y medidas de protección y atención apropiadas resultan urgentes.
 
-Particularmente, los sismos, son el fenómeno natural del cual tenemos menor capacidad predictiva 
+Particularmente, los sismos, son el fenómeno natural del cual tenemos menor capacidad predictiva. Sin embargo, son el desastre natural que genera mayor cantidad de victimas mortales y perdidas monetarias.
 
 ## **Propuesta de trabajo**
 
