@@ -4,16 +4,17 @@ Corresponde con el Servicio Geológico de Estados Unidos. Se utilizó esta API p
 * [Documentación API USGS](https://earthquake.usgs.gov/fdsnws/event/1/)
 * [Diccionario API USGS](https://earthquake.usgs.gov/data/comcat/index.php#tsunami)
 * [Rango de fechas/formatos disponibles por catálogo](https://earthquake.usgs.gov/data/comcat/catalog/us/)
-* [FDSN	Web	Service	Specifications](http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf)
+* [FDSN	Web Service Specifications](http://www.fdsn.org/webservices/FDSN-WS-Specifications-1.0.pdf)
 
-## JAPON
-#### Fuente:
-https://www.jma.go.jp/jma/index.html
-#### Place APIS:
-https://www.p2pquake.net/
-#### Documentación de API JSON:
-https://www.p2pquake.net/json_api_v2/
-#### Ejemplo de archivo JSON:
+## JMA
+Agencia meteoreológica de Japón. Se obtuvó datos de los sismos registrados en Japón mediante la API de esta agencia
+* [Página principal](https://www.jma.go.jp/jma/index.html)
+* [Visualizador de sismos](https://www.jma.go.jp/bosai/map.html#10/37.318/137.571/&elem=int&contents=earthquake_map&lang=en)
+
+## P2PQuake
+Aplicación que dispone de una API para obtener sismos en Japón. 
+* [Página principal](https://www.p2pquake.net/)
+* [Documentación API P2PQuake](https://earthquake.usgs.gov/fdsnws/event/1/)
 ![Ejemplo JSON](https://user-images.githubusercontent.com/104787036/203128755-af6ed777-dfcd-4df5-bc67-ba593bfa9443.JPG)
 
 ## NOAA
