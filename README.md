@@ -38,7 +38,13 @@ Particularmente, los sismos, son el fenómeno natural del cual tenemos menor cap
 * Streamlit/: Estructura de carpetas y documentos para la ejecución de una pagina web usando el framework Streamlit.
 
 ## Fuentes de información
-
+ 
+ ### USGS 
+ ### NOAA
+ ### CSN
+ ### JMA
+ ### NIED
+ ### P2PQuake
 
 ## ¿Como lo hacemos?  
 
