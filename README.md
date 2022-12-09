@@ -45,7 +45,7 @@ Este apartado hace una aclaración de la estructura de carpetas y archivos para 
 ## Glosario de trabajo
 * [Python](https://www.python.org): Lenguaje de programación potente y fácil de aprender.
 
-* [Docker](https://www.docker.com/products/docker-desktop/): Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de softwar.
+* [Docker](https://www.docker.com/products/docker-desktop/): Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software.
     
     a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.
     
@@ -55,7 +55,7 @@ Este apartado hace una aclaración de la estructura de carpetas y archivos para 
 
 * [GCP](https://console.cloud.google.com): Es un proveedor de recursos de computación en la nube que se utilizan para desarrollar, implementar y operar aplicaciones en la web.
 
-    a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto
+    a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.
     
     b. Bigquery: Es un almacén de datos sin servidor totalmente administrado que permite el análisis escalable de petabytes de datos.
     
