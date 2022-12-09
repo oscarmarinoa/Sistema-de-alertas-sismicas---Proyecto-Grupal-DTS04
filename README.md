@@ -1,3 +1,5 @@
+![logo](https://github.com/oscarmarinoa/Sistema-de-alertas-sismicas---Proyecto-Grupal-DTS04/blob/main/Imagenes/Logo.jpg)
+
 # Estandarización de información de redes sismológicas y comunicación efectiva a la comunidad.
 
 ## Proyecto-Grupal-DTS04
