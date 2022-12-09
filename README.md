@@ -60,6 +60,9 @@ Este apartado hace una aclaración de la estructura de carpetas y archivos para 
     b. Bigquery: Es un almacén de datos sin servidor totalmente administrado que permite el análisis escalable de petabytes de datos.
     
     c. Cloud Function : Es un entorno de ejecución sin servidores para compilar y conectar servicios en la nube.
+    
+* [Streamlit](https://streamlit.io): Es  “framework” de Python de código abierto que permite de manera sencilla e integrada desarrollar aplicaciones gracias a la interacción con otras librerías para su empleo en campos de la teledetección, ciencia de datos, etc.
+
 
 ### Integrantes: 
 * Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
