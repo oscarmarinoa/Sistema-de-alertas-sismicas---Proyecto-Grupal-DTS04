@@ -45,6 +45,22 @@ Este apartado hace una aclaración de la estructura de carpetas y archivos para 
 ## Glosario de trabajo
 * [Python](https://www.python.org): Lenguaje de programación potente y fácil de aprender.
 
+* [Docker](https://www.docker.com/products/docker-desktop/): Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de softwar.
+    
+    a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.
+    
+    b. Airflow: Una plataforma de gestión de flujo de trabajo de código abierto escrita en Python.
+    
+    c. FastApi: Es un marco web para desarrollar API RESTful en Python.
+
+* [GCP](https://console.cloud.google.com): Es un proveedor de recursos de computación en la nube que se utilizan para desarrollar, implementar y operar aplicaciones en la web.
+
+    a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto
+    
+    b. Bigquery: Es un almacén de datos sin servidor totalmente administrado que permite el análisis escalable de petabytes de datos.
+    
+    c. Cloud Function : Es un entorno de ejecución sin servidores para compilar y conectar servicios en la nube.
+
 ### Integrantes: 
 * Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
 * Gisela Sánchez [Github](https://github.com/sgisela945) [LinkedIn](https://www.linkedin.com/in/gisela-s%C3%A1nchez-272b9017a)
