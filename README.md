@@ -61,7 +61,7 @@ Este apartado hace una aclaración de la estructura de carpetas y archivos para 
     
     c. Cloud Function : Es un entorno de ejecución sin servidores para compilar y conectar servicios en la nube.
     
-* [Streamlit](https://streamlit.io): Es  “framework” de Python de código abierto que permite de manera sencilla e integrada desarrollar aplicaciones gracias a la interacción con otras librerías para su empleo en campos de la teledetección, ciencia de datos, etc.
+* [Streamlit](https://streamlit.io): Es un “framework” de Python de código abierto que permite de manera sencilla e integrada desarrollar aplicaciones gracias a la interacción con otras librerías para su empleo en campos de la teledetección, ciencia de datos, etc.
 
 
 ### Integrantes: 
