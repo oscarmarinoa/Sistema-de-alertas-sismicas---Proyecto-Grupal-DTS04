@@ -22,35 +22,18 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
 * [Documentación API NOAA](https://www.ngdc.noaa.gov/hazel/view/swagger#/)
 * [Diccionario API NOAA](https://www.ngdc.noaa.gov/hazel/view/about)
   
-## Web Scraping 
+## CSN
+Centro Sismológico Nacional de la Universidad de Chile. Corresponde a una interfaz web donde se registran los eventos sísmicos mpas recientes de Chile.
+* [Página principal](https://www.sismologia.cl)
 
-1. Sitio Web usados junto con Web Scraping:
+## NIED
+Interfaz web de el Instituto Nacional de Investigacición de Ciencias de la Tierra y Resilencia ante Desastres. Disponibiliza información acerca de eventos sísmicos en Japón.
 
- 	 A. https://www.sismologia.cl -- DATOS DE CHILE.
-  
- 	 B. https://www.hinet.bosai.go.jp -- DATOS DE JAPÓN.
-  
-	Como Fuente Para estudio(Henry) de Proyecto Grupal (Sismo).
-
-2. Lo primero primero que hacemos, es inspeccionar los elementos de la página mediante las opciones de navegación del mismo navegador.
-
-3. Inspeccionamos el body de la web y buscamos la etiqueta Table. Si tenemos esta etiqueta se puede pasar a los siguientes pasos.
-
-4. Para conectar se usaron 2 librerías:
-
- 	A. Requests
-  
-	B. BeautifulSoup
-
-5. Generamos la Requests del sitio web (Conexión).
-
-6. Usamos BeautifulSoup para poder ver lo que contiene el sitio web obteniendo el html.
-
-7. Filtramos la Etiqueta Table del la Vista Generada por BeautifulSoup.
-
-8. Generamos los Contenedores Para cada columna.
-
-9. Programamos los tipos de parámetros necesarios para extraer la información y guardarla en su columna correspondiente.
+La obtención de información para las ultimas dos fuentes fue realizada mediante Web Scrapping. Esto se llevo acabo de la siguiente manera:
+1.Inspección de los elementos de la página webor.
+2. Conexión con librerias Requests y BeautifulSoup.
+3. Generar request y obtención de respuesta.
+4. Generación de contenedores para los datos de interes y extracción de los mismos.
 
 ## Librerías Python:
  * Ver archivo requirements.txt (url :https://pypi.org/search/?q=pywin32)
