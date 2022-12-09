@@ -1,5 +1,5 @@
 ## API con FASTAPI
-En esta carpeta encontraras los archivos necesarios para correr una API mediante el Framework FASTAPI de manera local.
+En esta carpeta encontraras los archivos necesarios para correr una API mediante el Framework FASTAPI de manera local. La infomación es obtenida de una datawarehouse que se encuentra en la nube.
 ### Archivos:
 * Requirements.txt: Librerías necesarias para crear el ambiente virtaul.
 * __init__.py: Archivo para realizar configuraciones de importación de clases, funciones, etc.
