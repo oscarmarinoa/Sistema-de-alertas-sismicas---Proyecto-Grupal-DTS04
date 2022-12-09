@@ -1,6 +1,3 @@
-## Repositorios:
-* scripts_datasets.ipynb : Contiene el código necesario para obtener los datos de las diferentes fuentes de información, la creación de una base de datos local en Postgres y la ingesta de la misma.
-
 # Fuentes de información:
 ## USGS 
 Corresponde con el Servicio Geológico de Estados Unidos. Se utilizó esta API para recolectar información relacionada con eventos sísmicos y de tsunamis para los paises de interés.
