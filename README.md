@@ -30,11 +30,13 @@ Particularmente, los sismos, son el fenómeno natural del cual tenemos menor cap
 ## **Sobre el repositorio**
 
 * En este encontraras la estructura de carpetas y archivos para la ejecución del proyecto, además de documentación adicional complementaria para cada una de las dependencias:
+
+* API/: Estructura de carpetas y documentos para la creación de una API utilizando el framework FASTAPI.
+* Airflow/: Archivos para la automatización de procesos de ETL.
 * Diccionario de datos: Explicación detallada de la información que se encuentran en la base de datos y que es retornada mediate peticiones a la API de EARTH DATA.
 * Scritps/: Scritps con el código para el proceso de ETL de los datos obtenidos.
 * Streamlit/: Estructura de carpetas y documentos para la ejecución de una pagina web usando el framework Streamlit.
-* API/: Estructura de carpetas y documentos para la creación de una API utilizando el framework FASTAPI.
-* Airflow/: Archivos para la automatización de procesos de ETL.
+
 
 
 ## ¿Como lo hacemos?  
