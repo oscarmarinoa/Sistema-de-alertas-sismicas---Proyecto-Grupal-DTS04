@@ -28,6 +28,7 @@ Centro Sismológico Nacional de la Universidad de Chile. Corresponde a una inter
 
 ## NIED
 Interfaz web de el Instituto Nacional de Investigacición de Ciencias de la Tierra y Resilencia ante Desastres. Disponibiliza información acerca de eventos sísmicos en Japón.
+* [Página principal](https://www.hinet.bosai.go.jp)
 
 La obtención de información para las ultimas dos fuentes fue realizada mediante Web Scrapping. Esto se llevo acabo de la siguiente manera:
 1.Inspección de los elementos de la página webor.
