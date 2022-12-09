@@ -39,59 +39,11 @@ Particularmente, los sismos, son el fenómeno natural del cual tenemos menor cap
 
 ## Fuentes de información
  
-* USGS: United States Geological Service
-* NOAA: National Oceanic and Atmospheric Administration
-* CSN: Centro Sismológico Nacional - Universidad de Chile
+* USGS: United States Geological Service https://www.usgs.gov/programs/earthquake-hazards/earthquakes
+* NOAA: National Oceanic and Atmospheric Administration https://www.noaa.gov
+* CSN: Centro Sismológico Nacional - Universidad de Chile https://www.sismologia.cl
 * JMA: Japan Meteorological Agency https://www.jma.go.jp/jma/index.html
 * NIED: National Research Institute for Earth Science and Disaster Resilience https://www.hinet.bosai.go.jp
-* P2PQuake
-
-## ¿Como lo hacemos?  
-
-### Enfoque 1 [Data Analysis focus]
-
-Analizando profundamente la relacion de los sismos con otra u otras particularidades de su pais latinoamericano escogido.
-
-Ejemplos de lineas de investigacion (Solo para que se inspiren. Pueden divagar y escoger lo que se les ocurra, su mente es el limite!):
-
-- Sismicidad secundaria (después de un gran sismo) ¿cómo afecta? ¿Qué ha pasado? Se pueden anticipar medidas si es que hay algo sistemáticamente mal?
-- Es aconsejable que haya una reubicación de habitantes en zonas como CDMX que es sabido esta construida en una zona geológicamente inestable y con alta actividad sísmica?
-- Derribando (o acentuando) mitos: Tiene que ver el clima con la propensión a sismos de mayor “magnitud” y los cambios estacionales?
-- Efectos secundarios no deseables: Sismos y Tsunamis, Problemas en redes eléctricas, incendios…
+* P2PQuake https://www.p2pquake.net
 
 
-Entregables tangibles minimos:
-Mapa de geolocalizacion de los sismos escogidos que contemple la actualizacion cada hora. 
-La informacion que debe tener DEBE ser la escogida en su analisis. NO debe ir informacion cientifica como: Magnitud, Profundidad si esta no esta explicada o se indica por que es relevante.
-
-
-### Enfoque 2 [Machine Learning Focus]
-
-Aplicar un modelo de clasificacion no supervisada. 
-La idea aqui NO sera predecir un sismo, sino, dadas las caracteristicas que tienen los sismos, clasificarlos segun patrones como Peligrosidad Media/Alta/Baja
-o cualquier enfoque que quieran aplicar. 
-
-Entregables tangibles minimos:
-Presentacion de las etiquetas de clasificacion y performancia del modelo.  
-Deploy del modelo de ML - puesta en produccion (plataforma a elección)
-
-## **Datasets y fuentes complementarias**
-
-Fuentes de datos obligatorias:
-+ Estados Unidos https://earthquake.usgs.gov/fdsnws/event/1/
-+ Japon https://www.fdsn.org/networks/detail/JP/
-+ Observatorio Latinoamericano de su preferencia ***********
-
-Nota: El producto final debe tener en su etapa de *extraccion* los datos en formato JSON o GeoJSON. Formatos de texto como CSV podrian usarse en los pasos intermedios para hacer sus test respectivos de ser necesario, pero no seran admitidos en la entrega final.
-
-## **Planificación, seguimiento de actividades y tareas de cada integrante:**
-### Tareas Sprint 01:
-[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/1)
-### Tareas Sprint 02:
-Presentación: 
-https://www.canva.com/design/DAFS6iNq4-A/e2zEpPwc_PynegS6OCsBQA/view?utm_content=DAFS6iNq4-A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/2)
-### Tareas Sprint 03:
-[Grupo 01 Datascience 01 JIRA](https://grupo01datascience.atlassian.net/jira/software/projects/PGS/boards/3)
-
-![Henry DTS-04](https://github.com/oscarmarinoa/Sistema-de-alertas-sismicas---Proyecto-Grupal-DTS04/blob/main/Henry%20Logo.png)
