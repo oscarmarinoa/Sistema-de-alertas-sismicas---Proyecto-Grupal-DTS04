@@ -39,12 +39,12 @@ Particularmente, los sismos, son el fenómeno natural del cual tenemos menor cap
 
 ## Fuentes de información
  
- ### USGS 
- ### NOAA
- ### CSN
- ### JMA
- ### NIED
- ### P2PQuake
+* USGS: United States Geological Service
+* NOAA: National Oceanic and Atmospheric Administration
+* CSN: Centro Sismológico Nacional - Universidad de Chile
+* JMA: Japan Meteorological Agency https://www.jma.go.jp/jma/index.html
+* NIED: National Research Institute for Earth Science and Disaster Resilience https://www.hinet.bosai.go.jp
+* P2PQuake
 
 ## ¿Como lo hacemos?  
 
