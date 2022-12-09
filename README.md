@@ -34,9 +34,10 @@ Particularmente, los sismos, son el fenómeno natural del cual tenemos menor cap
 * API/: Estructura de carpetas y documentos para la creación de una API utilizando el framework FASTAPI.
 * Airflow/: Archivos para la automatización de procesos de ETL.
 * Diccionario de datos: Explicación detallada de la información que se encuentran en la base de datos y que es retornada mediate peticiones a la API de EARTH DATA.
-* Scritps/: Scritps con el código para el proceso de ETL de los datos obtenidos.
+* Scritps/: Scritps con el código para el proceso de ETL de los datos obtenidos. Adicionalmente contiene información relevante de las fuentes de información utilizadas.
 * Streamlit/: Estructura de carpetas y documentos para la ejecución de una pagina web usando el framework Streamlit.
 
+## Fuentes de información
 
 
 ## ¿Como lo hacemos?  
