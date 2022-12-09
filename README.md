@@ -42,6 +42,9 @@ Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad 
 * NIED: National Research Institute for Earth Science and Disaster Resilience https://www.hinet.bosai.go.jp
 * P2PQuake https://www.p2pquake.net
 
+## Glosario de trabajo
+* [Python](https://www.python.org)
+
 ### Integrantes: 
 * Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
 * Gisela Sánchez [Github](https://github.com/sgisela945) [LinkedIn](https://www.linkedin.com/in/gisela-s%C3%A1nchez-272b9017a)
