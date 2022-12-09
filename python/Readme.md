@@ -51,3 +51,6 @@ Como fuente de información adicional se utilizaron los datos obtenidos de la AP
 8. Generamos los Contenedores Para cada columna.
 
 9. Programamos los tipos de parámetros necesarios para extraer la información y guardarla en su columna correspondiente.
+
+## Librerías Python:
+ * Ver archivo requirements.txt (url :https://pypi.org/search/?q=pywin32)
