@@ -18,18 +18,23 @@ Los desastres naturales pueden resultar en un gran número de muertes, pérdida 
 
 Particularmente, los sismos, son el fenómeno natural del cual tenemos menor capacidad predictiva. Sin embargo, son el desastre natural que genera mayor cantidad de victimas mortales y perdidas monetarias.
 
-## **Propuesta de trabajo**
+## **Objetivos**
 
-Para este proyecto ustedes harán parte del equipo de atención de desastres del país latinoamericano de su preferencia. En este momento se encuentran trabajando en un proyecto tri-nacional en conjunto con el Estados unidos (USGS) y Japón (JMA) llamado “Working towards global standardization of seismological networks and effective communication to the civilian community. ” 
-
-Los objetivos de esta alianza son:
-
-<h4>1. Crear una  base de datos depurada que contemple los datos de las tres naciones de forma estandarizada:</h4>
-
-A las autoridades les interesa tener la información estándar de todos los países para poder crear un mecanismo de clasificación. La definición de un evento sísmico y los criterios de alerta adecuados deben tener en cuenta la calidad de los datos.
+* Crear una base de datos que contemple la información de sismos para los países de interés.
+* Informar a la comunidad de que acciones tomar a la hora de la ocurrencia de un sismo.
+* Permitir la obtención información de calidad y actualizada con relación a sismos, tsunamis y volcanes.
 
 
-<h4>2. Implementar mecanismos de comunicación y alerta a la comunidad civil en un lenguaje intuitivamente interpretable a través de Internet o cellBroadCast:</h4>
+## **Procedimiento**
+
+## **Sobre el repositorio**
+
+* En este encontraras la estructura de carpetas y archivos para la ejecución del proyecto, además de documentación adicional complementaria para cada una de las dependencias:
+* Diccionario de datos: Explicación detallada de la información que se encuentran en la base de datos y que es retornada mediate peticiones a la API de EARTH DATA.
+* Scritps/: Scritps con el código para el proceso de ETL de los datos obtenidos.
+* Streamlit/: Estructura de carpetas y documentos para la ejecución de una pagina web usando el framework Streamlit.
+* API/: Estructura de carpetas y documentos para la creación de una API utilizando el framework FASTAPI.
+* Airflow/: Archivos para la automatización de procesos de ETL.
 
 
 ## ¿Como lo hacemos?  
