@@ -25,7 +25,7 @@ Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad 
 
 ## Sobre el repositorio:
 
-* En este encontraras la estructura de carpetas y archivos para la ejecución del proyecto, además de documentación adicional complementaria para cada una de las dependencias:
+Este apartado hace una aclaración de la estructura de carpetas y archivos para la ejecución del proyecto, además de documentación adicional complementaria para cada una de las dependencias:
 
 * API/: Estructura de carpetas y documentos para la creación de una API utilizando el framework FASTAPI.
 * Airflow/: Archivos para la automatización de procesos de ETL.
