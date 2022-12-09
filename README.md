@@ -1,4 +1,5 @@
-# Working towards global standardization of seismological networks and effective communication to the civilian community
+# Estandarización de información de redes sismológicas y comunicación efectiva a la comunidad.
+
 ## Proyecto-Grupal-DTS04
 ### Integrantes: 
 * Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
