@@ -6,8 +6,7 @@
 
 ![Intro](https://user-images.githubusercontent.com/104787036/202545063-d46a6706-e880-448d-a1be-906b4e7c3996.jpg)
 
-
-## **Contexto**
+## Contexto
 
 Los desastres naturales pueden resultar en un gran número de muertes, pérdida de propiedades, y daños irreparables. Es por esto que la predicción temprana y medidas de protección y atención apropiadas resultan urgentes.
 
@@ -15,16 +14,16 @@ Particularmente, los sismos, son el fenómeno natural del cual tenemos menor cap
 
 Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad 
 
-## **Objetivos**
+## Objetivos
 
 * Crear una base de datos que contemple la información de sismos para los países de interés.
 * Informar a la comunidad de que acciones tomar a la hora de la ocurrencia de un sismo.
 * Permitir la obtención información de calidad y actualizada con relación a sismos, tsunamis y volcanes.
 
 
-## **Procedimiento**
+## Procedimiento
 
-## **Sobre el repositorio**
+## Sobre el repositorio
 
 * En este encontraras la estructura de carpetas y archivos para la ejecución del proyecto, además de documentación adicional complementaria para cada una de las dependencias:
 
