@@ -4,6 +4,8 @@
 
 ## Proyecto-Grupal-DTS04
 
+![logo](https://github.com/oscarmarinoa/Sistema-de-alertas-sismicas---Proyecto-Grupal-DTS04/blob/main/Imagenes/carl-campbell-D4PJKYGH2qY-unsplash.jpg)
+
 ![Intro](https://user-images.githubusercontent.com/104787036/202545063-d46a6706-e880-448d-a1be-906b4e7c3996.jpg)
 
 ## Contexto
