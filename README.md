@@ -3,13 +3,6 @@
 # Estandarización de información de redes sismológicas y comunicación efectiva a la comunidad.
 
 ## Proyecto-Grupal-DTS04
-### Integrantes: 
-* Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
-* Gisela Sánchez [Github](https://github.com/sgisela945) [LinkedIn](https://www.linkedin.com/in/gisela-s%C3%A1nchez-272b9017a)
-* Lala Weber [Github](https://github.com/LalaYupii)
-* Oscar Mariño [Github](https://github.com/oscarmarinoa) [LinkedIn](https://www.linkedin.com/in/oscar-mariño-arias-774098112/)
-
-
 
 ![Intro](https://user-images.githubusercontent.com/104787036/202545063-d46a6706-e880-448d-a1be-906b4e7c3996.jpg)
 
@@ -50,4 +43,8 @@ Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad
 * NIED: National Research Institute for Earth Science and Disaster Resilience https://www.hinet.bosai.go.jp
 * P2PQuake https://www.p2pquake.net
 
-
+### Integrantes: 
+* Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
+* Gisela Sánchez [Github](https://github.com/sgisela945) [LinkedIn](https://www.linkedin.com/in/gisela-s%C3%A1nchez-272b9017a)
+* Lala Weber [Github](https://github.com/LalaYupii)
+* Oscar Mariño [Github](https://github.com/oscarmarinoa) [LinkedIn](https://www.linkedin.com/in/oscar-mariño-arias-774098112/)
