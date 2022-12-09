@@ -43,7 +43,7 @@ Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad 
 * P2PQuake https://www.p2pquake.net
 
 ## Glosario de trabajo
-* [Python](https://www.python.org)
+* [Python](https://www.python.org): Lenguaje de programación potente y fácil de aprender.
 
 ### Integrantes: 
 * Federico Goyechea [Github](https://github.com/Workitaws) [LinkedIn](https://www.linkedin.com/in/federico-goyechea-65361b24a/)
