@@ -20,8 +20,14 @@ Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad 
 * Informar a la comunidad de que acciones tomar a la hora de la ocurrencia de un sismo.
 * Permitir la obtención información de calidad y actualizada con relación a sismos, tsunamis y volcanes.
 
-
 ## Procedimiento:
+Para llevar a cabo el presente proyecto, se generalizan los pasos que permitieron alcanzar los objetivos planteados.
+1. Contexto del proyecto y antecedentes.
+2. Planificación y definición de objetivos (proceso reiterativo).
+3. Definición de stack tegnologico y procesos de ETL para estructura local.
+4. Desarrollo de estructura en la nube.
+5. Desarrollo de productos al usuario y despliegue.
+6. Documentación del proyecto y lecciones aprendidas.
 
 ## Sobre el repositorio:
 
@@ -48,17 +54,13 @@ Este apartado hace una aclaración de la estructura de carpetas y archivos para 
 * [Docker](https://www.docker.com/products/docker-desktop/): Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software.
     
     a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.
-    
     b. Airflow: Una plataforma de gestión de flujo de trabajo de código abierto escrita en Python.
-    
     c. FastApi: Es un marco web para desarrollar API RESTful en Python.
 
 * [GCP](https://console.cloud.google.com): Es un proveedor de recursos de computación en la nube que se utilizan para desarrollar, implementar y operar aplicaciones en la web.
 
     a. PostgreSQL: Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.
-    
     b. Bigquery: Es un almacén de datos sin servidor totalmente administrado que permite el análisis escalable de petabytes de datos.
-    
     c. Cloud Function : Es un entorno de ejecución sin servidores para compilar y conectar servicios en la nube.
     
 * [Streamlit](https://streamlit.io): Es un “framework” de Python de código abierto que permite de manera sencilla e integrada desarrollar aplicaciones gracias a la interacción con otras librerías para su empleo en campos de la teledetección, ciencia de datos, etc.
