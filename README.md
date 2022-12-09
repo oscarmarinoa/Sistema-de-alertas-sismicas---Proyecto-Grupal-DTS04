@@ -14,7 +14,7 @@ Los desastres naturales pueden resultar en un gran número de muertes, pérdida 
 
 Particularmente, los sismos, son el fenómeno natural del cual tenemos menor capacidad predictiva. Sin embargo, son el desastre natural que genera mayor cantidad de victimas mortales y perdidas monetarias.
 
-Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad 
+Por lo tanto, EARTH DATA busca brindar herramientas que permitan a la comunidad entender de manera más clara que es un sismo, como repercute en la cotidianidad de las personas y como este conocimiento puede ayudar a salvaguardar la población ante la ocurrencia de un desastre natural.
 
 ## Objetivos
 
